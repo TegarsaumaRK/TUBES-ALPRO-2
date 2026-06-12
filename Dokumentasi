@@ -1,0 +1,90 @@
+# Aplikasi Reservasi Meja Restoran
+
+## Informasi Proyek
+
+| | |
+|---|---|
+| **Nama** | Tegar Sauma RK & M Syauqi Rizqullah |
+| **NIM** | 103012500271 & 103012500362 |
+| **Program Studi** | S1 Informatika |
+| **Kelas** | IF-49-05 |
+| **Mata Kuliah** | Algoritma & Pemrograman 2 |
+| **Universitas** | Telkom University |
+
+---
+
+## Deskripsi Program
+
+Aplikasi ini dibuat untuk membantu pengelolaan data meja restoran dan proses reservasi meja berdasarkan kapasitas kursi. Setiap fitur dibuat dalam bentuk fungsi dan prosedur tersendiri agar program lebih rapi dan mudah dipahami.
+
+---
+
+## Fitur Utama
+
+### 1. Manajemen Meja
+- Tambah data meja (kode meja otomatis)
+- Hapus data meja
+- Cari data meja berdasarkan kode
+- Update kapasitas atau status meja
+- Urutkan meja berdasarkan kapasitas
+- Tampilkan daftar semua meja
+
+### 2. Reservasi Meja
+- Cari meja tersedia berdasarkan jumlah orang
+- Buat reservasi (sistem otomatis memilih meja terbaik)
+- Batalkan reservasi
+- Urutkan reservasi berdasarkan jumlah orang
+- Tampilkan data reservasi
+- Cari data reservasi berdasarkan nama pelanggan
+
+---
+
+## Algoritma yang Digunakan
+
+| Algoritma | Digunakan Untuk |
+|---|---|
+| **Binary Search** | Mencari meja berdasarkan kode meja |
+| **Sequential Search** | Mencari reservasi berdasarkan nama pelanggan dan kode reservasi |
+| **Selection Sort** | Mengurutkan meja berdasarkan kapasitas (asc/desc), di dalamnya terdapat pencarian nilai ekstrem (terkecil/terbesar) untuk menentukan posisi swap |
+| **Insertion Sort** | Mengurutkan reservasi berdasarkan jumlah orang (asc/desc) |
+
+---
+
+## Struktur Program
+├── Subprogram 1 — Manajemen Meja
+
+│   ├── tambahDataMeja()
+
+│   ├── hapusDataMeja()
+
+│   ├── cariDataMeja()        → binarySearchMeja()
+
+│   ├── updateDataMeja()      → sequentialSearchMeja()
+
+│   ├── selectionSortMeja()
+
+│   │   ├── selectionSortAsc()
+
+│   │   └── selectionSortDesc()
+
+│   └── tampilDataMeja()
+
+│
+
+└── Subprogram 2 — Reservasi Meja
+
+├── cariMejaTersedia()
+
+├── buatReservasi()
+
+├── batalkanReservasi()   → sequentialSearchReservasiKode()  → sequentialSearchMeja()
+
+├── insertionSortReservasi()
+
+│   ├── insertionSortAsc()
+
+│   └── insertionSortDesc()
+
+├── tampilDataReservasi()
+
+└── cariDataReservasi()   → sequentialSearchReservasi()
