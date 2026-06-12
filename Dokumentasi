@@ -2,8 +2,6 @@
 
 ## Informasi Proyek
 
-| | |
-|---|---|
 | **Nama** | Tegar Sauma RK & M Syauqi Rizqullah |
 | **NIM** | 103012500271 & 103012500362 |
 | **Program Studi** | S1 Informatika |
@@ -11,7 +9,6 @@
 | **Mata Kuliah** | Algoritma & Pemrograman 2 |
 | **Universitas** | Telkom University |
 
----
 
 ## Deskripsi Program
 
@@ -41,8 +38,6 @@ Aplikasi ini dibuat untuk membantu pengelolaan data meja restoran dan proses res
 
 ## Algoritma yang Digunakan
 
-| Algoritma | Digunakan Untuk |
-|---|---|
 | **Binary Search** | Mencari meja berdasarkan kode meja |
 | **Sequential Search** | Mencari reservasi berdasarkan nama pelanggan dan kode reservasi |
 | **Selection Sort** | Mengurutkan meja berdasarkan kapasitas (asc/desc), di dalamnya terdapat pencarian nilai ekstrem (terkecil/terbesar) untuk menentukan posisi swap |
